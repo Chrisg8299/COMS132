@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class BoundsCheck : MonoBehaviour
 {
+    private BoundsCheck bndCheck;
     [Header("Set in Inspector")]
     public float radius = 1f;
     public bool keepOnScreen = true;

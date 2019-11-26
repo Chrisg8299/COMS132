@@ -21,6 +21,8 @@ public class Main : MonoBehaviour
     }
     public void SpawnEnemy()
     {
+
+
         // Pick a random Enemy prefab to instantiate
         int ndx = Random.Range(0, prefabEnemies.Length); // b
         GameObject go = Instantiate<GameObject>(prefabEnemies[ndx]); // c
@@ -40,5 +42,14 @@ public class Main : MonoBehaviour
         // Invoke SpawnEnemy() again
         Invoke("SpawnEnemy", 1f / enemySpawnPerSecond); // g
     }
+    public void DelayedRestart(float delay)
+    {
+        // Invoke the Restart() method in delay seconds
+        Invoke("Restart", delay);
+    }
+    public void Restart()
+    {
+        // Reload _Scene_0 to restart the game
+        SceneManager.LoadScene("_Scene_0");
+    }
 }
-

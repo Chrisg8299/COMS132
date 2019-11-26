@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 467661398}
   m_Layer: 8
   m_Name: _Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,10 +228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5b3c8b8b94e824999c101dc35c7a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shieldLevel: 1
   speed: 30
   rollMult: -45
   pitchMult: 30
-  shieldLevel: 1
+  gameRestartDelay: 2
 --- !u!4 &467661397
 Transform:
   m_ObjectHideFlags: 0
